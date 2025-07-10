@@ -26,5 +26,13 @@ class Report {
       return $rows;
     }
 
+    public function get_logins_count () {
+      $db = db_connect();
+      $statement = $db->prepare("select username as user, count(*) as user_count from logins group by username;");
+      $statement->execute();
+      $rows = $statement->fetchAll(PDO::FETCH_ASSOC);
+      return $rows;
+    }
+
 }
 ?>
