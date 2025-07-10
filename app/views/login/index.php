@@ -9,23 +9,13 @@
     </div>
 
 
-	<?php if (isset($_SESSION['failed_attempts'])) { 	?>
+	<?php if (isset($_SESSION['failed_attempts']) || isset($_SESSION['no_user'])) { 	?>
 					<div class="row">
 						<div class="col-lg-12 text-center">
 							<div class="alert alert-danger" role="alert">
 								Incorrect username or password!
 								<br>
 								You will be temporarily locked out after <?= 3 - $_SESSION['failed_attempts'] ?> more unsuccessful login attempts
-							</div>
-						</div>
-				</div>
-	<?php		}	?>
-
-	<?php if (isset($_SESSION['no_user'])) { 	?>
-					<div class="row">
-						<div class="col-lg-12 text-center">
-							<div class="alert alert-danger" role="alert">
-								No such user exists
 							</div>
 						</div>
 				</div>
