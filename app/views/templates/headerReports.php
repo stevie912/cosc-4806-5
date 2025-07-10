@@ -1,0 +1,32 @@
+<?php 
+    if ($_SESSION['admin'] != true) {    //user is not admin, deny access
+        $_SESSION['denied'] = true;
+        header('Location: /home');
+    }
+    require_once 'app/views/templates/header.php' 
+?>
+
+<div class="container">
+    all-reports
+    <div class="page-header" id="banner">
+        <div class="row">
+            <div class="col-lg-12">
+                <h1>Reports</h1>
+                <br>
+            </div>
+        </div>
+    </div>
+    hello
+    <div class="dropdown">
+      <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+        Choose a report
+      </button>
+      <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+        <li><a class="dropdown-item" href="reports/reminders_all">All reminders</a></li>
+        <li><a class="dropdown-item" href="reports/reminders_user">Number of reminders by user</a></li>
+        <li><a class="dropdown-item" href="reports/logins_user">Number of logins by user</a></li>
+      </ul>
+    </div>
+    <br>
+</div>    
+        

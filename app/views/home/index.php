@@ -27,4 +27,4 @@
          </div>																				 
     <?php unset($_SESSION['denied']); } ?>
 
-    <?php require_once 'app/views/templates/footer.php' ?>
+<?php require_once 'app/views/templates/footer.php' ?>
