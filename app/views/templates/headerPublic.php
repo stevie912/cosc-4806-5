@@ -8,15 +8,15 @@ if ($_SESSION['failed_attempts'] > 2) {    //lockout after 3 failed login attemp
   header('Location: /lockout');
 }  
 
-if (isset($_SESSION['failed_attempts'])) {
-    echo "You will be temporarily locked out after " . (3 - $_SESSION['failed_attempts']) . " more unsuccessful login attempts<br>";
-}
+// if (isset($_SESSION['failed_attempts'])) {
+//     echo "You will be temporarily locked out after " . (3 - $_SESSION['failed_attempts']) . " more unsuccessful login attempts<br>";
+// }
 
-if (isset($_SESSION['no_user'])) {
-    echo "No such user exists<br>";
-    unset($_SESSION['no_user']);  
-}
-?>
+// if (isset($_SESSION['no_user'])) {
+//     echo "No such user exists<br>";
+//     unset($_SESSION['no_user']);  
+// }
+// ?>
 
 <!DOCTYPE html>
 <html lang="en">
