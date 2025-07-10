@@ -1,4 +1,11 @@
-<?php require_once 'app/views/templates/header.php' ?>
+<?php 
+    if ($_SESSION['admin'] != true) {    //user is not admin, deny access
+        $_SESSION['denied'] = true;
+        header('Location: /home');
+    }
+    require_once 'app/views/templates/header.php' 
+?>
+
 <div class="container">
     <div class="page-header" id="banner">
         <div class="row">
