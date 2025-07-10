@@ -57,8 +57,12 @@ class User {
         //check if password is correct
         if (password_verify($password, $valid_password)) {
           $_SESSION['auth'] = true;
+          $_SESSION['username'] = $username;
           $statement = $db->prepare("INSERT INTO logins (username, time, result) VALUES (?,  ?, ?)");
           $statement->execute([$username,  date("Y-m-d H:i:s"), 1]);
+          if ($username == 'admin') {
+            $_SESSION['admin'] = true;
+          }
           header("Location: /home");
           die;
         } else {
