@@ -106,8 +106,10 @@ class User {
        $password = password_hash($password, PASSWORD_DEFAULT); 
        $statement = $db->prepare("INSERT INTO users (username, password) VALUES (?, ?)");
        $statement->execute([$username, $password]);
-       echo "User created successfully";  
-       echo "<br><a href='/login'>Click here to login</a>";
+       // echo "User created successfully";  
+       // echo "<br><a href='/login'>Click here to login</a>";
+       $_SESSION['user_created'] = true;
+       header("Location: /login");
      }
    }
 }
