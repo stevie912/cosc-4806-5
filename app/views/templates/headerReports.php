@@ -7,7 +7,6 @@
 ?>
 
 <div class="container">
-    all-reports
     <div class="page-header" id="banner">
         <div class="row">
             <div class="col-lg-12">
@@ -16,7 +15,6 @@
             </div>
         </div>
     </div>
-    hello
     <div class="dropdown">
       <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
         Choose a report

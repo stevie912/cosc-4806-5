@@ -26,11 +26,12 @@ if (!isset($_SESSION['auth'])) {
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
         <li class="nav-item">
           <a class="nav-link" href="/reminders">Reminders</a>
-          <?php if (isset($_SESSION['admin'])) { ?>
-            <a class="nav-link" href="/reports">Reports</a>
-          <?php } ?>
         </li>
-        
+        <?php if (isset($_SESSION['admin'])) { ?>
+          <li class="nav-item">
+            <a class="nav-link" href="/reports">Reports</a>
+          </li>
+        <?php } ?>
       </ul>
     </div>
   </div>

@@ -12,6 +12,12 @@ class Reports extends Controller {
     $this->view('reports/reminders_all', ['reminders_list' => $reminders_list]);
   }
 
+  public function reminders_user() {
+    $report = $this->model('Report');
+    $reminders_count = $report->get_reminders_count();
+    $this->view('reports/reminders_count', ['reminders_count' => $reminders_count]);
+  }
+
 }
 
 ?>
