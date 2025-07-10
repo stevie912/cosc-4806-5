@@ -1,7 +1,7 @@
 <?php require_once 'app/views/templates/headerReports.php' ?>
 
     <div class="body-content"> 
-        <table class="table table-dark table-striped">
+        <table class="table table-light table-striped">
             <thead>
                 <th>ID</th>
                 <th>user ID</th>
