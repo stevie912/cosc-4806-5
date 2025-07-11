@@ -21,7 +21,7 @@
             </div>
         </div>
     </div>
-    <!-- <div class="dropdown">
+    <div class="dropdown">
       <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
         Choose a report
       </button>
@@ -30,82 +30,8 @@
         <li><a class="dropdown-item" href="reports/reminders_user">Number of reminders by user</a></li>
         <li><a class="dropdown-item" href="reports/logins_user">Number of logins by user</a></li>
       </ul>
-    </div> -->
-    <div>
-        <form action="reports/" method="POST" name="theForm" id="theForm">
-            <select form="theForm" name="selectedPage" >
-              <option value="reminders_all">All reminders</option>
-              <option value="reminders_count">Number of reminders by user</option>
-              <option value="logins_user">Number of logins by user</option>
-            </select>
-            <input type="submit" value="Load page" />
-        </form>
     </div>
     <br>
-
-  <?php if ($_SESSION['report'] = "reminders_all") { ?>
-      <div class="body-content"> 
-          <table class="table table-light table-striped">
-              <thead>
-                  <th>ID</th>
-                  <th>user ID</th>
-                  <th>Subject</th>
-                  <th>Date</th>
-              </thead>
-              <tbody>
-                  <?php foreach ($data['reminders_list'] as $reminder) { ?>
-                      <tr>
-                          <td><?php echo $reminder['id']; ?></td>
-                          <td><?php echo $reminder['user_id']; ?></td>
-                          <td><?php echo $reminder['subject']; ?></td>
-                          <td><?php echo $reminder['created_at']; ?></td>
-                      </tr>
-                  <?php } ?>
-              </tbody>
-          </table>
-          <br>
-      </div>
-    <?php unset($_SESSION['report']); } else if ($_SESSION['report'] = "reminders_count") { ?>
-      <div class="body-content">
-          <table class="table table-light table-striped">
-              <thead>
-                  <th>User ID</th>
-                  <th>Number of reminders</th>
-              </thead>
-              <tbody>
-                  <?php foreach ($data['reminders_count'] as $reminder) { ?>
-                      <tr>
-                          <td><?php echo $reminder['id']; ?></td>
-                          <td><?php echo $reminder['user_count']; ?></td>
-                      </tr>
-                  <?php } ?>
-              </tbody>
-          </table>
-          <br>
-      </div>
-    <?php unset($_SESSION['report']); } else if ($_SESSION['report'] = "logins_count") { ?>
-      <div class="body-content"> 
-          <table class="table table-light table-striped">
-              <thead>
-                  <th>username</th>
-                  <th># of Logins</th>
-
-              </thead>
-              <tbody>
-                  <?php foreach ($data['logins_count'] as $logins_count) { ?>
-                      <tr>
-                          <td><?php echo $logins_count['user']; ?></td>
-                          <td><?php echo $logins_count['user_count']; ?></td>
-
-                      </tr>
-                  <?php } ?>
-              </tbody>
-          </table>
-          <br>
-      </div>
-    <?php unset($_SESSION['report']); } ?>
-    
-  
 
 
 

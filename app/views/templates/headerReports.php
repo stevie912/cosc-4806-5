@@ -21,7 +21,7 @@
             </div>
         </div>
     </div>
-    <!-- <div class="dropdown">
+    <div class="dropdown">
       <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
         Choose a report
       </button>
@@ -30,16 +30,6 @@
         <li><a class="dropdown-item" href="reports/reminders_user">Number of reminders by user</a></li>
         <li><a class="dropdown-item" href="reports/logins_user">Number of logins by user</a></li>
       </ul>
-    </div> -->
-    <div>
-        <form action="reports/display_report" method="POST" name="theForm" id="theForm">
-            <select form="theForm" name="selectedPage" onchange="this.form.submit()">
-              <option value="reminders_all">All reminders</option>
-              <option value="reminders_count">Number of reminders by user</option>
-              <option value="logins_user">Number of logins by user</option>
-            </select>
-            <input type="submit" value="Load page" />
-        </form>
     </div>
     <br>
    
