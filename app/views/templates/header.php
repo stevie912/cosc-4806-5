@@ -15,7 +15,7 @@ if (!isset($_SESSION['auth'])) {
         <meta name="apple-mobile-web-app-capable" content="yes">
         <meta name="mobile-web-app-capable" content="yes">
     </head>
-    <body>
+    <body >
     <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-secondary">
   <div class="container">
     <a class="navbar-brand" href="/home">COSC 4806</a>
@@ -40,12 +40,14 @@ if (!isset($_SESSION['auth'])) {
       Contact
     </a>
     <ul class="dropdown-menu">
-      <li><div class="container-fluid">
+      <li>
+        <div class="container-fluid">
         <form role="search">
-          <input class="form-control me-2" type="search" placeholder="your email" aria-label="Contact"/>
+          <input class="form-control form-control-lg" type="search" placeholder="your email" aria-label="Contact"/>
           <button class="btn btn-outline-success" type="submit">We'll be in touch</button>
         </form>
-      </div></li>
+        </div>
+      </li>
       
     </ul>
   </li>

@@ -1,11 +1,5 @@
-<style>
-a:link {
-  color: lightcyan;
-}
-    
-</style>
-<footer class="footer bg-secondary text-white">  
-    <div class="container padding-bottom-3x mb-2 mt-5">
+
+<footer class="footer fixed-bottom mt-auto py-3 bg-light">
       <div class="row align-items-center">
         <div class="col text-center">
             <br>
