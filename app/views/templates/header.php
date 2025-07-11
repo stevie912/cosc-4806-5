@@ -16,7 +16,7 @@ if (!isset($_SESSION['auth'])) {
         <meta name="mobile-web-app-capable" content="yes">
     </head>
     <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-secondary">
+    <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-secondary">
   <div class="container">
     <a class="navbar-brand" href="/home">COSC 4806</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -32,6 +32,26 @@ if (!isset($_SESSION['auth'])) {
             <a class="nav-link" href="/reports">Reports</a>
           </li>
         <?php } ?>
+        <!-- <li class="nav-item">
+          <a class="nav-link" href="#">Contact</a>
+        </li> -->
+  <li class="nav-item dropdown">
+    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+      Contact
+    </a>
+    <ul class="dropdown-menu">
+      <li><div class="container-fluid">
+        <form role="search">
+          <input class="form-control me-2" type="search" placeholder="your email" aria-label="Contact"/>
+          <button class="btn btn-outline-success" type="submit">We'll be in touch</button>
+        </form>
+      </div></li>
+      
+    </ul>
+  </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/logout">Log out</a>
+        </li>
       </ul>
     </div>
   </div>

@@ -2,6 +2,7 @@
 a:link {
   color: lightcyan;
 }
+    
 </style>
 <footer class="footer bg-secondary text-white">  
     <div class="container padding-bottom-3x mb-2 mt-5">
@@ -24,7 +25,7 @@ a:link {
         </div>
         <div class="col text-center">
             <br>
-            <a href="#">Past greatness</a>
+            <a href="#">Past feats of glory</a>
             <br>
             <a href="#">Photos</a>
             <br>
