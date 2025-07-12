@@ -52,7 +52,7 @@ if (!isset($_SESSION['auth'])) {
     </ul>
   </li>
         <li class="nav-item">
-          <a class="nav-link" href="/logout">Log out</a>
+          <a class="nav-link" href="/logout">Logout</a>
         </li>
       </ul>
     </div>

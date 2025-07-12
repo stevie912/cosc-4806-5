@@ -5,7 +5,9 @@
     }
     require_once 'app/views/templates/header.php' 
 ?>
-
+<script
+src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js">
+</script>
 <div class="container">
     <div class="page-header" id="banner">
         <div class="row">
@@ -24,7 +26,7 @@
         </div>
     </div>
     <div class="body-content"> 
-        <table class="table table-light table-striped">
+        <!-- <table class="table table-light table-striped">
             <thead>
                 <th>username</th>
                 <th># of Logins</th>
@@ -39,8 +41,25 @@
                     </tr>
                 <?php } ?>
             </tbody>
-        </table>
+        </table> -->
         <br>
+        <canvas id="loginsChart" style="width:100%;max-width:700px"></canvas>
+        <script>
+            var xValues = [<?php foreach ($data['logins_count'] as $logins_count) { echo "'" . $logins_count['user'] . "',"; } ?>];
+            var yValues = [<?php foreach ($data['logins_count'] as $logins_count) { echo $logins_count['user_count'] . ","; } ?>];
+            var barColors = ["red", "green","blue","orange","yellow","purple","pink","brown","grey","black","white","cyan","magenta","lime","maroon","navy","olive","teal","silver","gold"];
+            new Chart("loginsChart", {
+                type: "pie",
+                data: {
+                    labels: xValues,
+                    datasets: [{
+                        backgroundColor: barColors,
+                        data: yValues
+                    }]
+                }
+            });
+        </script>
+                      
     </div>
 
     <?php require_once 'app/views/templates/footer.php' ?>
