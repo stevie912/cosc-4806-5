@@ -2,9 +2,10 @@
 <main role="main" class="container">
     <div class="page-header" id="banner">
         <div class="row">
-            <div class="col-lg-12">
+            <div class="col-lg-12 text-center">
                 <h1>Contact</h1>
-                <p class="lead">Don't call us, we'll call you</p>
+                <p class="lead ">Don't call us, we'll call you</p>
+                <br>
             </div>
         </div>
     </div>
