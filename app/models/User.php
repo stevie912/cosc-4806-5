@@ -116,6 +116,15 @@ class User {
        header("Location: /login");
      }
    }
+
+   public function store_contact($email) {
+     $db = db_connect();
+     $statement = $db->prepare("UPDATE users SET email = ? WHERE id = ?;");
+     $statement->execute([$email, $_SESSION['user_id']]);
+     $_SESSION['contact_stored'] = true;
+     header("Location: /home");
+   }
+  
 }
       
 

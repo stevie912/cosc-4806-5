@@ -1,6 +1,6 @@
 
 </body>
-        <footer class="footer fixed-bottom mt-auto py-3 bg-light">
+    <footer class="footer fixed-bottom bg-light">
       <div class="row align-items-center">
         <div class="col text-center">
             <br>

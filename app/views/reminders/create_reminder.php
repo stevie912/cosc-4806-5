@@ -14,7 +14,7 @@
                         <input required type="text" id="subject" class="form-control" name="subject">
                       </div>
                        <br>
-                        <button type="submit" value ="submit" class="btn btn-primary">Create Reminder</button>
+                        <button type="submit" value ="submit" class="btn btn bg-primary-subtle">Create Reminder</button>
                     </fieldset>
                     </form> 
                   </div>

@@ -46,7 +46,7 @@
 				<input required type="password" class="form-control" name="password">
 			</div>
             <br>
-		    <button type="submit" class="btn btn-primary">Login</button>
+		    <button type="submit" class="btn btn bg-primary-subtle">Login</button>
 		</fieldset>
 		</form> 
 			<br>
