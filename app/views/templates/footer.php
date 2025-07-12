@@ -1,5 +1,6 @@
 
-<footer class="footer fixed-bottom mt-auto py-3 bg-light">
+</body>
+        <footer class="footer fixed-bottom mt-auto py-3 bg-light">
       <div class="row align-items-center">
         <div class="col text-center">
             <br>
@@ -23,7 +24,7 @@
             <br>
             <a href="#">Photos</a>
             <br>
-            <a href="#">Awards</a>
+            <a href="#">Awards!</a>
         </div>
       </div>
 
@@ -36,9 +37,6 @@
     </div>
 </footer>
 
-</div>
-
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
 
-</body>
 </html>

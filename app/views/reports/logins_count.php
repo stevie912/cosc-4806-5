@@ -47,7 +47,7 @@ src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js">
         <script>
             var xValues = [<?php foreach ($data['logins_count'] as $logins_count) { echo "'" . $logins_count['user'] . "',"; } ?>];
             var yValues = [<?php foreach ($data['logins_count'] as $logins_count) { echo $logins_count['user_count'] . ","; } ?>];
-            var barColors = ["red", "green","blue","orange","yellow","purple","pink","brown","grey","black","white","cyan","magenta","lime","maroon","navy","olive","teal","silver","gold"];
+            var barColors = ["red", "green","blue","orange","yellow","purple","pink","brown","grey","black","white","cyan","magenta","maroon","lime","navy","olive","teal","silver","gold"];
             new Chart("loginsChart", {
                 type: "pie",
                 data: {

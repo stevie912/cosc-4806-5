@@ -5,7 +5,9 @@
     }
     require_once 'app/views/templates/header.php' 
 ?>
-
+<script
+src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js">
+</script>
 <div class="container">
     <div class="page-header" id="banner">
         <div class="row">
@@ -24,6 +26,35 @@
     </div>
 
     <div class="body-content"> 
+        
+        <br>
+        <canvas id="remindersChart" style="width:100%;max-width:700px"></canvas>
+        <script>
+            var xValues = [<?php foreach ($data['reminders_count'] as $reminder) { echo "'" . $reminder['id'] . "',"; } ?>];
+            var yValues = [<?php foreach ($data['reminders_count'] as $reminder) { echo $reminder['user_count'] . ","; } ?>];
+            var barColors = ["red", "green","blue","orange","yellow","purple","pink","brown","grey","black","white","cyan","magenta","lime","maroon","navy","olive","teal"];
+            new Chart("remindersChart", {
+                type: "bar",
+                data: {
+                    labels: xValues,
+                    datasets: [{
+                        backgroundColor: barColors,
+                        data: yValues
+                    }]
+                },
+                options: {
+                    scales: {
+                        yAxes: [{
+                            ticks: {
+                                beginAtZero: true
+                            }
+                        }]
+                    },
+                    legend: {display: false}
+                }
+            });
+        </script>
+        <br>
         <table class="table table-light table-striped">
             <thead>
                 <th>user ID</th>
@@ -38,7 +69,6 @@
                 <?php } ?>
             </tbody>
         </table>
-        <br>
     </div>
 
     <?php require_once 'app/views/templates/footer.php' ?>
