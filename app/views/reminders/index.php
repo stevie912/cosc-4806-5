@@ -5,11 +5,11 @@
             <div class="col-lg-12">
                 <nav aria-label="breadcrumb">
                   <ol class="breadcrumb">
-                    <li class="breadcrumb-item"><a href="/">Home</a></li>
+                    <li class="breadcrumb-item"><a href="/" class="link-secondary">Home</a></li>
                     <li class="breadcrumb-item active" aria-current="page"><?= ucwords($_SESSION['controller']); ?></li>
                   </ol>
                 </nav>
-                <h1>Reminders</h1>
+                <h1>Your Reminders</h1>
                 <br>
             </div>
         </div>
@@ -31,14 +31,14 @@
                         <td><?php echo $reminder['user_id']; ?></td>
                         <td><?php echo $reminder['subject']; ?></td>
                         <td><?php echo $reminder['created_at']; ?></td>
-                        <td><a href="/reminders/update/?reminder_id=<?php echo $reminder['id']; ?>"</a>update</td>
-                        <td><a href="/reminders/delete/?reminder_id=<?php echo $reminder['id']; ?>"</a>delete</td>
+                        <td><a href="/reminders/update/?reminder_id=<?php echo $reminder['id']; ?>" class="link-info"</a>update</td>
+                        <td><a href="/reminders/delete/?reminder_id=<?php echo $reminder['id']; ?>"class="link-info"</a>delete</td>
                     </tr>
                 <?php } ?>
             </tbody>
         </table>
         <br>
-        <button type="button" class="btn btn-primary" onclick="window.location.href='/reminders/create'">Create New Reminder</button>
+        <button type="button" class="btn btn bg-primary-subtle" onclick="window.location.href='/reminders/create'">Create New Reminder</button>
         <br>
     </div>
    

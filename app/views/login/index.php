@@ -3,7 +3,10 @@
     <div class="page-header" id="banner">
         <div class="row">
             <div class="col-lg-12 text-center">
-                <h1>You are not logged in</h1>
+							<br>
+                <h1>Login</h1>
+							<br>
+							<br>
             </div>
         </div>
     </div>
@@ -45,12 +48,13 @@
 				<label for="password">Password</label>
 				<input required type="password" class="form-control" name="password">
 			</div>
-            <br>
-		    <button type="submit" class="btn btn bg-primary-subtle">Login</button>
+      <br>
+		  <button type="submit" class="btn btn bg-primary-subtle ">Login</button>
 		</fieldset>
 		</form> 
 			<br>
-			<a href="/create"><h5 class="text-center">Create new user</h5></a>
+			<br>
+			<a href="/create" class="link-secondary"><h5 class="text-center">Create new user</h5></a>
 			<br>
 	</div>
 </div>

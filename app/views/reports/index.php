@@ -12,7 +12,7 @@
             <div class="col-lg-12">
                 <nav aria-label="breadcrumb">
                   <ol class="breadcrumb">
-                    <li class="breadcrumb-item"><a href="/">Home</a></li>
+                    <li class="breadcrumb-item"><a href="/" class="link-secondary">Home</a></li>
                     <li class="breadcrumb-item active" aria-current="page"><?= ucwords($_SESSION['controller']); ?></li>
                   </ol>
                 </nav>
@@ -26,9 +26,9 @@
         Choose a report
       </button>
       <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-        <li><a class="dropdown-item" href="reports/reminders_all">All reminders</a></li>
         <li><a class="dropdown-item" href="reports/reminders_user">Number of reminders by user</a></li>
         <li><a class="dropdown-item" href="reports/logins_user">Number of logins by user</a></li>
+        <li><a class="dropdown-item" href="reports/reminders_all">All reminders</a></li>
       </ul>
     </div>
     <br>

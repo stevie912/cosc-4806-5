@@ -15,7 +15,7 @@
                         <input type="hidden" name="reminder_id" value="<?php echo $data['reminder_id'];?>">
                       </div>
                        <br>
-                        <button type="submit" value ="submit" class="btn btn-primary">Update  Reminder</button>
+                        <button type="submit" value ="submit" class="btn bg-primary-subtle">Update  Reminder</button>
                     </fieldset>
                     </form> 
                   </div>

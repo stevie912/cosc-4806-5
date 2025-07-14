@@ -3,7 +3,7 @@
     <div class="page-header" id="banner">
         <div class="row">
             <div class="col-lg-12 text-center">
-                <h1>Contact</h1>
+                <h1>Contact </h1>
                 <p class="lead ">Don't call us, we'll call you</p>
                 <br>
             </div>
