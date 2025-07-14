@@ -14,6 +14,9 @@ if (!isset($_SESSION['auth'])) {
         <meta name="viewport" content="width=device-width">
         <meta name="apple-mobile-web-app-capable" content="yes">
         <meta name="mobile-web-app-capable" content="yes">
+        <meta name="description" content="web application for COSC 4806 assignment">
+        <meta name="author" content="Steve Rhodes"
+        <meta name="robots" content="noindex, nofollow"
     </head>
     <body >
     <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-secondary">
@@ -35,22 +38,6 @@ if (!isset($_SESSION['auth'])) {
         <li class="nav-item">
           <a class="nav-link" href="/contact">Contact</a>
         </li>
-  <!-- <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Contact
-          </a>
-            <ul class="dropdown-menu">
-              <li>
-                <div class="container-fluid">
-                <form role="search">
-                  <input class="form-control form-control-lg" type="search" placeholder="your email" aria-label="Contact"/>
-                  <button class="btn btn-outline-success" type="submit">We'll be in touch</button>
-                </form>
-                </div>
-              </li>
-            </ul>
-        </li> -->
- 
         <li class="nav-item">
           <a class="nav-link" href="/logout">Logout</a>
         </li>
