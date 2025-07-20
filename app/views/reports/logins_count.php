@@ -15,7 +15,7 @@ src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js">
                 <nav aria-label="breadcrumb">
                   <ol class="breadcrumb">
                     <li class="breadcrumb-item"><a href="/" class="link-secondary">Home</a></li>
-                    <li class="breadcrumb-item active" aria-current="page"><?= ucwords($_SESSION['controller']); ?></li>
+                    <li class="breadcrumb-item active" aria-current="page"><a href="/<?php echo ($_SESSION['controller']);?>" class="link-secondary"><?= ucwords($_SESSION['controller']); ?></a></li>   <!-- this is the fixed breadcrumb code for the link back to reports page -->
                     <li class="breadcrumb-item active" aria-current="page"><?= ucwords($_SESSION['method']); ?></li>
 
                   </ol>
